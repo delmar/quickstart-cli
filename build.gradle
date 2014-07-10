@@ -1,10 +1,10 @@
 buildscript {
     repositories {
-        maven { url "http://repo.spring.io/libs-snapshot" }
+        maven { url "http://repo.spring.io/libs-release" }
         mavenLocal()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:0.5.0.M5")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.4.RELEASE")
     }
 }
 
@@ -24,9 +24,9 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework:spring-context:4.0.0.RC1")
-    compile("org.springframework.boot:spring-boot-starter:0.5.0.M5")
-    testCompile("org.springframework.boot:spring-boot-starter-test:0.5.0.BUILD-SNAPSHOT")
+    // compile("org.springframework:spring-context:4.0.5.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("junit:junit:4.11")
 }
 
